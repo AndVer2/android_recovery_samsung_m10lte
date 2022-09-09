@@ -14,7 +14,22 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/m10lte/
+PRODUCT_RELEASE_NAME := m10lte
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_m10lte.mk
+$(call inherit-product, build/target/product/embedded.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+PRODUCT_PACKAGES += \
+	charger_res_images \
+	charger
+
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/dt.img:boot.img
+
+PRODUCT_DEVICE := m10lte
+PRODUCT_NAME := omni_m10lte
+PRODUCT_MODEL := Samsung Galaxy M10
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
+
