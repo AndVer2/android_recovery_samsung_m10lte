@@ -8,6 +8,8 @@ export FOX_RECOVERY_SYSTEM_PARTITION=/dev/block/platform/13500000.dwmmc0/by-name
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
+export TARGET_SCREEN_WIDTH="720"
+export TARGET_SCREEN_HEIGHT="1520"
 
 . build/envsetup.sh
 lunch omni_m10lte-eng
