@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-PRODUCT_RELEASE_NAME := m10lte
+PRODUCT_RELEASE_NAME := j6lte
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -25,8 +25,8 @@ PRODUCT_PACKAGES += \
 	charger_res_images \
 	charger
 
-PRODUCT_DEVICE := m10lte
-PRODUCT_NAME := omni_m10lte
-PRODUCT_MODEL := Samsung Galaxy M10
+PRODUCT_DEVICE := j6lte
+PRODUCT_NAME := omni_j6lte
+PRODUCT_MODEL := Samsung Galaxy J6 2018
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
