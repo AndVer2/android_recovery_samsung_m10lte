@@ -16,7 +16,7 @@ Default_Settings() {
     export SHRP_OTG="/usb-otg"
     export SHRP_FLASH=1
     export SHRP_CUSTOM_FLASHLIGHT=true
-    export SHRP_FONP_1="/sys/class/camera/flash/rear_torch_flash"
+    export SHRP_FONP_1="/sys/devices/virtual/camera/flash/rear_flash"
     export SHRP_FLASH_MAX_BRIGHTNESS=255
     export SHRP_REC="/dev/block/platform/13540000.dwmmc0/by-name/RECOVERY"
     export SHRP_AB=false
