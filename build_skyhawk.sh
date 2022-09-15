@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # what device are we building for?
-TARGET_DEVICE="$1"
+TARGET_DEVICE="m10lte"
 
 # configure some default settings for the build
 Default_Settings() {
