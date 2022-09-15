@@ -1,18 +1,15 @@
 #!/bin/bash
 
-# what device are we building for?
-TARGET_DEVICE="m10lte"
-
 # configure some default settings for the build
 Default_Settings() {
 
-    export TARGET_DEVICE="$i"
-    export SHRP_PATH="device/samsung/$i"
-    export SHRP_DEVICE_CODE="$i"
+    export TARGET_DEVICE="m10lte"
+    export SHRP_PATH="device/samsung/m10lte"
+    export SHRP_DEVICE_CODE="m10lte"
     export SHRP_MAINTAINER=youssefnone
     export SHRP_EDL_MODE=0
-    export SHRP_EXTERNAL="/sdcard1"
-    export SHRP_INTERNAL="/storage"
+    export SHRP_EXTERNAL="/external_sdcard"
+    export SHRP_INTERNAL="/sdcard"
     export SHRP_OTG="/usb-otg"
     export SHRP_FLASH=1
     export SHRP_CUSTOM_FLASHLIGHT=true
@@ -38,7 +35,7 @@ do_build() {
   
   lunch omni_"$TARGET_DEVICE"-eng
   
-  mka recoveryimage -j`nproc`
+  mka recoveryimage
 }
 
 # --- main --- #
