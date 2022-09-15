@@ -25,6 +25,8 @@ PRODUCT_PACKAGES += \
 	charger_res_images \
 	charger
 
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/dt.img:boot.img
+
 PRODUCT_DEVICE := m10lte
 PRODUCT_NAME := omni_m10lte
 PRODUCT_MODEL := Samsung Galaxy M10
