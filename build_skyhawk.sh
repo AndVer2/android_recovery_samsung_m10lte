@@ -19,6 +19,7 @@ Default_Settings() {
     export SHRP_AB=false
     export SHRP_REC_TYPE=Treble
     export SHRP_DEVICE_TYPE=A/B
+    export INC_IN_REC_ADDON_4=true
     export SHRP_STATUSBAR_RIGHT_PADDING=48
     export SHRP_STATUSBAR_LEFT_PADDING=48
     export SHRP_EXPRESS=true
