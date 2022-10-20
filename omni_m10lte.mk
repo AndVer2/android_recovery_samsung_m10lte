@@ -25,11 +25,14 @@ PRODUCT_PACKAGES += \
 	charger_res_images \
 	charger
 
+PRODUCT_PACKAGES += \
+    tzdata_twrp
+
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/dt.img:boot.img
 
 PRODUCT_DEVICE := m10lte
 PRODUCT_NAME := omni_m10lte
-PRODUCT_MODEL := Samsung Galaxy M10
+PRODUCT_MODEL := Galaxy M10
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 
