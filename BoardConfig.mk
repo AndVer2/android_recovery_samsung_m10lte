@@ -47,8 +47,8 @@ TARGET_NO_RADIOIMAGE := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE := true
+BOARD_USES_QCOM_DECRYPTION := true
 
-# Kernel
 # kernel and bootimg
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/dtbhtool/mkbootimg.mk
